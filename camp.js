@@ -29,7 +29,15 @@ app.get("/",function(req,res){
 	res.render("landing.ejs");
 });
 app.get("/campground",function(req,res){
+//res.render("campground.ejs",{campground:campground});
+	campground.find({},function(err,campground){
+if(err){
+	console.log(err)
+}elae{
 res.render("campground.ejs",{campground:campground});
+}
+		
+	
 
 
 
