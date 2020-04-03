@@ -33,7 +33,7 @@ app.get("/campground",function(req,res){
 	campground.find({},function(err,campground){
 if(err){
 	console.log(err)
-}elae{
+}else{
 res.render("campground.ejs",{campground:campground});
 }
 		
